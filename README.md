@@ -4,7 +4,7 @@
 
 本專案是一個以健身姿勢偵測為主題的輕量化網頁。專案透過 Flask 建立後端路由與會員系統，使用 OpenCV、MediaPipe Pose 與 Pillow 處理網路攝影機影像，並將使用者的運動紀錄存入 SQLite 資料庫。
 
-<p>
+<p align="center">
   <img src="./static/flow-chart.png" width=550>
 </p>
 
