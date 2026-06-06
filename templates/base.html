@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>project</title>
+  <link rel="stylesheet" href="/static/aa.css" />
+</head>
+
+<body>
+  <div class="back">
+  </div>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="logo">
+        <a href="{{ url_for('index') }}">Home</a>
+      </div>
+      <img src="../static/logo_left.png" class="logoimg">
+      <img src="../static/logo_right.png" class="logoimg2">
+      <ul class="navbar-ul">
+        {% if g.user %}
+        <li class="dropdown">
+          <a href="{{ url_for('workout') }}" class="dropbtn">健身專區</a>
+          <div class="dropdown-content">
+            <a href="{{ url_for('home.plank') }}" onclick="sendPose('plank')">棒式</a>
+            <a href="{{ url_for('home.dumbbell') }}" onclick="sendPose('dumbbell')">二頭肌彎舉</a>
+            <a href="{{ url_for('home.wallsit') }}" onclick="sendPose('wallsit')">靠牆蹲</a>
+            <a href="{{ url_for('home.squat') }}" onclick="sendPose('squat')">深蹲</a>
+            <a href="{{ url_for('home.situp') }}" onclick="sendPose('situp')">仰臥起坐</a>
+            <a href="{{ url_for('home.pushup') }}" onclick="sendPose('pushup')">伏地挺身</a>
+          </div>
+        </li>
+        <li>
+          <a href="{{ url_for('data') }}">數據記錄</a>
+        </li>
+        <li>
+          <a href="{{ url_for('auth.logout') }}">登出</a>
+        </li>
+        {% else %}
+        <li>
+          <a href="{{ url_for('auth.register') }}">註冊帳號</a>
+        </li>
+        <li>
+          <a href="{{ url_for('auth.login') }}">登入</a>
+          {% endif %}
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="header-image">{% block span %}{% endblock %}</div>
+  </div>
+</body>
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section contact-info">
+      {% block fitness %}{% endblock %}
+      <div class="footer-section hours"></div>
+    </div>
+  </div>
+</footer>
+<script src="../static/sendpose.js"></script>
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+</html>

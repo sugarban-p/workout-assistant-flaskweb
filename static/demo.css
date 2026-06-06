@@ -1,0 +1,415 @@
+* {
+  box-sizing: border-box;
+}
+
+.title {
+  top: 70px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 67px;
+  font-weight: 700;
+}
+
+.content {
+  position: absolute;
+  top: 137px;
+  width: 700px;
+  left: 355px;
+  font-size: 24px;
+  color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.startbtn {
+  width: 300px;
+  height: 60px;
+  align-content: center;
+  background-color: #2c6bda;
+}
+
+.startbtn:hover {
+  cursor: pointer;
+  background-color: #53b939;
+  box-shadow: 0 9px 12px rgba(0, 0, 0, 0.5);
+}
+
+body {
+  max-width: 1388px; /* 與navbar-container一致 */
+  margin: 0 auto; /* 居中 */
+  padding-top: 56px; /* 確保內容不被固定的navbar遮擋 */
+  background: #2c3e50;
+  z-index: 100px;
+}
+
+.back {
+  height: 1500px;
+  background: #2c3e50;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.navbar {
+  background-color: #2c3e50;
+  color: #ffffff;
+  /* overflow: hidden; */
+  position: fixed;
+  z-index: 150;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 56px;
+  opacity: 1;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1388px;
+  height: 51px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.logo a {
+  color: #f1c40f;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 32px;
+}
+
+.navbar-ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-ul a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+
+.navbar-ul a:hover {
+  color: #f1c40f; /* 淺黃色 */
+  border: 2px solid #f1c40f; /* 邊框和文字顏色相同 */
+  padding: 8px 13px; /* 減少padding以容納邊框 */
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: inherit;
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 10px 15px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #2c3e50;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 200;
+}
+
+.dropdown-content a {
+  color: #ffffff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1c40f;
+  color: #2c3e50;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  color: #f1c40f;
+  border: 2px solid #f1c40f;
+  padding: 8px 13px;
+}
+
+header {
+  width: 100%;
+  height: 504px;
+  background: #7f7c7c;
+  opacity: 1;
+  position: relative;
+  top: 56px;
+  left: 0px;
+  overflow: hidden;
+}
+
+.header-image {
+  width: 100%;
+  height: 768px;
+  background: url(../static/index.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 0.8; /* 調整透明度為50% */
+  position: absolute;
+  top: 350px;
+  left: 0px;
+  overflow: hidden;
+}
+
+.middlebox {
+  position: absolute;
+  top: 350px;
+  left: 200px;
+  transform: translate(-50%, -50%);
+  background-color: rgba(44, 62, 80, 0.7); /* 深藍色半透明背景 */
+  color: #ffffff;
+  padding: 20px 40px;
+  border-radius: 12px;
+  border: 2px solid #f1c40f; /* 與滑鼠移過去時的文字和邊框顏色一致 */
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* 陰影效果 */
+  transition: all 0.3s ease;
+}
+.all_href {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* 滑鼠移過去時效果 */
+.middlebox:hover {
+  background-color: rgba(241, 196, 15, 0.9); /* 半透明的淺黃色背景 */
+  color: #2c3e50; /* 深藍色文字 */
+  border: 2px solid #2c3e50; /* 深藍色邊框 */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* 加強陰影效果 */
+}
+
+h1 {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer */
+.footer {
+  background-color: #2c3e50;
+  color: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  margin: 20px 0;
+}
+
+.footer-section h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.footer-section p,
+.footer-section a {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #dd6d31;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #ffffff;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 1em;
+  color: #ffffff;
+}
+
+/* styles.css */
+
+/* article 樣式 */
+
+.articlebody {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.articles {
+  position: absolute;
+  top: 150px;
+  width: 91%;
+}
+
+.article {
+  background-color: #e9ecef;
+  border: 9px solid #f6e660;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+}
+
+.article h2 {
+  margin-top: 87;
+  font-size: 1.5em;
+  color: #007bff;
+  margin-left: 25px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+.imgarea {
+  display: flex;
+  justify-content: center;
+}
+.article img {
+  width: 200px;
+  height: 200px;
+}
+
+.vl {
+  width: 1px;
+  background-color: #555;
+}
+.left-section {
+  flex: 1; /* Allow these sections to take equal space */
+  padding: 10px; /* Adjust padding as needed */
+  display: flex;
+  align-items: center;
+}
+.center-section {
+  display: flex;
+  justify-content: center; /* Center the vertical line horizontally */
+  align-items: center; /* Center the vertical line vertically */
+  padding: 10px; /* Adjust padding as needed */
+  width: 45%;
+}
+.right-section {
+  flex: 1; /* Allow these sections to take equal space */
+  padding: 10px; /* Adjust padding as needed */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.goworkout {
+  /* background-color: #555; */
+  color: #ffffff;
+  text-decoration: none;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #555;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  color: #ffffff;
+}
+button:hover {
+  background-color: #dd6d31;
+}
+
+@media (max-width: 540px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-ul {
+    flex-direction: column; /* 改為列方向 /
+  gap: 10px; / 調整間距 */
+  }
+
+  .middlebox,
+  .membership {
+    width: 90%; /* 改為百分比寬度 /
+  padding: 10px; / 調整padding /
+  font-size: 1em; / 調整字體大小 */
+  }
+
+  .footer-container {
+    flex-direction: column; /* 改為列方向 /
+  align-items: center; / 水平居中 */
+  }
+
+  .footer-section {
+    text-align: center; /* 調整對齊 */
+  }
+
+  .article {
+    padding: 10px; /* 調整padding */
+  }
+
+  .article h2 {
+    font-size: 1.2em; /* 調整字體大小 */
+  }
+
+  .left-section,
+  .right-section {
+    width: 100%; /* 改為百分比寬度 /
+  padding: 10px;
+  text-align: center; / 調整對齊 */
+  }
+
+  .imgarea {
+    margin-bottom: 10px; /* 添加下邊距 */
+  }
+
+  .article img {
+    width: 80%; /* 改為百分比寬度 /
+  max-width: 150px; / 設置最大寬度 */
+  }
+}

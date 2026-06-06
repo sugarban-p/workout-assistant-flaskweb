@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block span %}
+<div class="middlebox">
+  {% if g.user %}
+  <a href="{{ url_for('workout') }}" class="all_href">健身去</a>
+  {% else %}
+  <a href="{{ url_for('auth.login') }}" class="all_href">會員登入</a>
+  {% endif %}
+</div>
+{% endblock %}

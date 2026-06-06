@@ -1,0 +1,80 @@
+[
+    {
+        "title": "棒式",
+        "content": [
+            "準備姿勢：趴在墊子上，前臂平放於地面，手肘位於肩膀正下方。",
+            "開始動作：用腳趾撐地，抬起身體，使身體從頭到腳呈一直線。",
+            "保持姿勢：核心收緊，臀部不要過高或過低，保持身體穩定。",
+            "回到初始位置：緩慢放下啞鈴，手臂完全伸直。"
+        ],
+        "youtube": "https://www.youtube.com/watch?v=kL_NJAkCQBg",
+        "image": "/static/p_plank.png",
+        "url": "home/plank",
+        "sendPose": "plank"
+    },
+    {
+        "title": "二頭肌彎舉",
+        "content": [
+            "準備姿勢：雙腳與肩同寬站立，手握啞鈴，手臂自然垂放。",
+            "開始動作：吸氣，彎曲手肘，將啞鈴舉向肩膀。",
+            "頂峰收縮：在頂峰位置保持1-2秒，充分收縮二頭肌",
+            "回到初始位置：緩慢放下啞鈴，手臂完全伸直。"
+        ],
+        "youtube": "https://www.youtube.com/watch?v=1Ya3F0uVG3Y&",
+        "image": "/static/p_dumbbell.png",
+        "url": "home/dumbbell",
+        "sendPose": "dumbbell"
+    },
+    {
+        "title": "靠牆蹲",
+        "content": [
+            "準備姿勢：背靠牆站立，雙腳與肩同寬，腳尖略微朝外。",
+            "開始動作：慢慢下蹲，直到大腿與地面平行，膝蓋呈90度角，膝蓋不超過腳尖。",
+            "保持姿勢：保持這個位置，核心收緊，背部緊貼牆面。",
+            "結束動作：保持姿勢30秒至1分鐘，然後慢慢站起來回到初始位置。"
+        ],
+        "youtube": "https://www.youtube.com/watch?v=xD42HFEchp0",
+        "image": "/static/p_wallsit.png",
+        "url": "home/wallsit",
+        "sendPose": "wallsit"
+    },
+    {
+        "title": "深蹲",
+        "content": [
+            "準備姿勢：雙腳與肩同寬站立，腳尖略微朝外，雙手放於胸前或自然垂放。",
+            "開始動作：屈膝下蹲，臀部向後移動，保持背部挺直，直到大腿與地面平行或略低於平行。",
+            "頂峰位置：在最低點停留片刻，確保膝蓋不超過腳尖，核心收緊",
+            "回到初始位置：用腳跟發力，站回起始位置，保持身體穩定。"
+        ],
+        "youtube": "https://www.youtube.com/watch?v=gsNoPYwWXeM",
+        "image": "/static/p_squat.png",
+        "url": "home/squat",
+        "sendPose": "squat"
+    },
+    {
+        "title": "仰臥起坐",
+        "content": [
+            "準備姿勢：仰躺在墊子上，雙膝彎曲，雙腳平放地面，雙手交叉於胸前或輕放於耳旁。",
+            "開始動作：收縮腹肌，抬起上半身，使胸部靠近膝蓋。",
+            "頂峰位置：在頂峰位置稍作停留，保持腹肌收緊。",
+            "回到初始位置：緩慢放下上半身，回到仰躺姿勢。"
+        ],
+        "youtube": "https://www.youtube.com/watch?v=2fB1R9uWQbw",
+        "image": "/static/p_situp.png",
+        "url": "home/situp",
+        "sendPose": "situp"
+    },
+    {
+        "title": "伏地挺身",
+        "content": [
+            "準備姿勢：趴在地面，雙手略寬於肩，雙腳併攏，腳趾撐地。",
+            "開始動作：手臂彎曲，降低身體，使胸部接近地面，保持身體呈一直線。",
+            "頂峰位置：在最低點稍作停留，確保肘部約呈90度角",
+            "回到初始位置：用手臂發力，推起身體，回到起始位置。"
+        ],
+        "youtube": "https://www.youtube.com/watch?v=IODxDxX7oi4",
+        "image": "/static/p_pushup.png",
+        "url": "home/pushup",
+        "sendPose": "pushup"
+    }
+]

@@ -1,0 +1,43 @@
+# Python bytecode/cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python packaging/test artifacts
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local environment/config
+.env
+.env.*
+!.env.example
+
+# IDE/editor local settings
+.vscode/
+.idea/
+
+# Flask/runtime data
+instance/
+*.db
+*.sqlite
+*.sqlite3
+
+# Generated media/output from OpenCV experiments
+incorrect_posture_*.jpg
+plank_posture_over_time.png
+
+# OS metadata
+.DS_Store
+Thumbs.db
+*.ipynb
+*.otf
