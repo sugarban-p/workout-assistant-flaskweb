@@ -75,20 +75,7 @@
 ├─ schema.sql     # user / records table schema
 ├─ articles.json  # 運動教學資料
 ├─ static/        # CSS、JavaScript 與運動圖片資源
-└─ templates/     # Flask Jinja templates
-   ├─ base.html
-   ├─ fitness_base.html
-   ├─ home.html
-   ├─ login.html
-   ├─ register.html
-   ├─ workout.html
-   ├─ result.html
-   ├─ plank.html
-   ├─ dumbbell.html
-   ├─ wallsit.html
-   ├─ squat.html
-   ├─ situp.html
-   └─ pushup.html
+└─ templates/     # Flask Jinja templates html
 ```
 
 ## 專案使用流程
